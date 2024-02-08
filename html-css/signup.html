@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta character = "UTF-8">
+<title>Intro to html forms</title>
+
+</head>
+<body style="background-color:lightgrey">
+<style>
+#register-form{
+
+width:300px;
+background-color:white;
+padding:24px;
+margin-left:auto;
+margin-right:auto;
+}
+</style>
+<form id = "register-form" method = "POST">
+
+<h1 style="text-align:centre">Sign up</h1>
+<div >
+Name: <br>
+<input list="fullname" type = "text" name="name" placeholder="full name" autofocus required>
+<datalist id="fullname">
+<option value="ABC">
+<option value="XYZ">
+</datalist>
+<br>
+<br>
+email: <br>
+<input list="emilid" type = "email" name ="id" placeholder="gmail id" required>
+<br><br>
+Password:<br>
+<input type = "password" name="password" placeholder="8 characters" maxlength="8" minlength="8"required>
+
+<br><br>
+Confirm Password:<br>
+<input type = "password" name="confirm password" placeholder="8 characters" maxlenght="8" minlength="8" required>
+<br>
+<br>
+Date Of Birth:<br>
+<input type="date" name="date"> 
+Gender:<br>
+<input type = "radio" name="male" value="male">Male</input> 
+<input type = "radio" name="female" value="male">Female</input>
+<input type = "radio" name="Other" value="male">Other</input>
+<br><br>
+Insert your photo:<br>
+<input type="file" name="image">
+<br><br>
+Insert your resume:<br>
+<input type="file" name="image">
+<br><br>
+Security Question: <br>
+<select name = "security-question"> 
+<option>Select</option>
+<option>What was your first pet name?</option>
+<option>What was your primary school name?</option>
+<option>What is your favourite colour?</option>
+</select>
+<br>
+<textarea name = "answer" rows = "6" cols = "28"></textarea>
+<br>
+<br>
+<input type = "checkbox" name = "terms and condition" value = "accept" required>I agree terms and conditions
+<br>
+<input type = "submit" value = "Register">
+</div>
+</form>
+</body>
+</html>
